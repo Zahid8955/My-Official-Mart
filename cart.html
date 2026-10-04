@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Official Mart shopping cart" />
+    <title>Cart | My Official Mart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">My Official Mart</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="product.html">Product Detail</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html" data-cart-link
+              >Cart <span class="cart-badge">0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to light mode"
+        title="Switch to light mode"
+      >
+        🌙 Dark
+      </button>
+    </header>
+    <main>
+      <section class="cart-page">
+        <h2>Your Cart</h2>
+        <p>Review your items before checkout.</p>
+        <div id="empty-cart" class="empty-cart" hidden>
+          <h3>Your cart is empty</h3>
+          <p>Add something you like from our latest collection.</p>
+          <a class="btn1" href="products.html">Continue Shopping</a>
+        </div>
+        <div id="cart-content" class="cart-layout">
+          <section><div id="cart-items" class="cart-items"></div></section>
+          <aside class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+              <span>Subtotal</span><strong id="cart-subtotal">₹0</strong>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span><strong id="cart-shipping">FREE</strong>
+            </div>
+            <div class="summary-row summary-total">
+              <span>Total</span><strong id="cart-total">₹0</strong>
+            </div>
+            <p><small>Free delivery on orders above ₹499.</small></p>
+            <button id="checkout-btn" class="checkout-btn" type="button">
+              Place Order
+            </button>
+            <button id="clear-cart" class="clear-cart-btn" type="button">
+              Clear Cart
+            </button>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <h3>&copy; 2026 My Official Mart. All rights reserved.</h3>
+      <p><em>Wear the Code. Live the Street.</em></p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </nav>
+      <p>
+        <a href="https://instagram.com" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+        &nbsp;|&nbsp;
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+        &nbsp;|&nbsp;
+        <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+      </p>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>
